@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/class-diagram
+abstract class Item
+abstract class ToDo
+ToDoList -|> Application
+ToDo -|> ToDoList
+Item -|> ToDo
+
+Application --|> SaveToDoLists
+Application --|> LoadToDoLists
+class Item{
+- description
+- dueDate
+- CompleteCheck = False
+
+This is the class that will make
+up that ToDo class
+editDescription()
+editDueDate()
+editCompleteCheck()
+}
+
+class ToDo{
+-Title
+-Class Item *MAX 256*
+
+This is the class of
+the Actual ToDo Object
+
+addItem()
+removeItem()
+editTitle()
+}
+
+class ToDoList{
+-Class ToDO *MAX 256*
+
+This is the class that actually
+contains all the user made ToDo lists
+addToDo()
+removeToDo()
+}
+
+abstract class Application {
+ - Class ToDoList
+ - CurrentlySelectedToDo
+
+ This class will be the entrance point for our program
+ and it will contain the buttons needed to maneuver
+ through our program
+
+
+ displayToDoLists()
+ SaveToDoLists()
+ loadToDoLists()
+ }
+
+ class SaveToDoLists{
+ this will allow a user to save
+ selected ToDos to a file location
+ of their choosing.
+ }
+
+ class LoadToDoLists{
+ this will allow a user to load a
+ previously saved file *TXT FORMAT*
+
+ }
+ @enduml
