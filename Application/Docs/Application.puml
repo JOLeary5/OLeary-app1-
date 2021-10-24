@@ -22,7 +22,7 @@ editCompleteCheck()
 
 class ToDo{
 -Title
--Class Item *MAX 256*
+-LinkedList Item *MAX 256*
 
 This is the class of
 the Actual ToDo Object
@@ -33,7 +33,7 @@ editTitle()
 }
 
 class ToDoList{
--Class ToDO *MAX 256*
+-LinkedList ToDO *MAX 256*
 
 This is the class that actually
 contains all the user made ToDo lists
