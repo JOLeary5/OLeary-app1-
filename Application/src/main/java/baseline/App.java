@@ -11,8 +11,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.util.Objects;
+/*Linked list will be very, very important this assignment, I
+ *  feel like once I can get a linked list to work with
+ *  the individual classes I can get this programming running smoothly
+ */
 
 public class App extends Application {
 
@@ -27,7 +29,7 @@ public class App extends Application {
     public void start(Stage primaryStage)throws Exception{
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("ApplicationGUI(PROTOTYPE1).fxml"));
 
-        Scene scene = new Scene(root, 300, 300);
+        Scene scene = new Scene(root, 600, 600);
 
         primaryStage.setTitle("To-Do Application");
         primaryStage.setScene(scene);
@@ -49,12 +51,11 @@ public class App extends Application {
     //  File ScanR = new Scanner
     //
     //  parse the data into the main linkedList in the back
-    //
-    //
     //}
 
     // Function SelectToDoLists(ToDoX){
     //
     //  ToDoX.selected = true;
     //
+    //}
 }

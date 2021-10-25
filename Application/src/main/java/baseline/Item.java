@@ -32,7 +32,7 @@ public class Item {
 
     // public CompleteCheck()
     // {
-    //   sout ("Edit Due Date")
+    //   **** HOPEFULLY THIS WILL BE A BUTTON UNDER THE ITEM ITSELF *****
     //   item.DueDate
     //   return Description
     // }
