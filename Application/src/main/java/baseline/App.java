@@ -11,25 +11,25 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 /*Linked list will be very, very important this assignment, I
  *  feel like once I can get a linked list to work with
  *  the individual classes I can get this programming running smoothly
  */
 
-public class App extends Application {
-
-    // ToDoList ToDoListObject =  new ToDoList
-
-
-    public static void main(String[] args) {
-        launch(args);
+public class App extends Application
+{
+    public static void main(String[] args)
+    {
+        new ToDoList();
     }
 
     @Override
-    public void start(Stage primaryStage)throws Exception{
+    public void start(Stage primaryStage)throws Exception
+    {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("ApplicationGUI(PROTOTYPE1).fxml"));
 
-        Scene scene = new Scene(root, 600, 600);
+        Scene scene = new Scene(root, 600, 400);
 
         primaryStage.setTitle("To-Do Application");
         primaryStage.setScene(scene);

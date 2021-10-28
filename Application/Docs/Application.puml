@@ -1,16 +1,15 @@
 @startuml
 'https://plantuml.com/class-diagram
 abstract class Item
-abstract class ToDo
+
 ToDoList -|> Application
-ToDo -|> ToDoList
-Item -|> ToDo
+Item -|> ToDoList
 
 Application --|> SaveToDoLists
 Application --|> LoadToDoLists
 class Item{
-- description
-- dueDate
+- description *1-256 characters*
+- dueDate *OPTIONAL* *FORMATTED*
 - CompleteCheck = False
 
 This is the class that will make
@@ -20,20 +19,9 @@ editDueDate()
 editCompleteCheck()
 }
 
-class ToDo{
--Title
--LinkedList Item *MAX 256*
-
-This is the class of
-the Actual ToDo Object
-
-addItem()
-removeItem()
-editTitle()
-}
 
 class ToDoList{
--LinkedList ToDO *MAX 256*
+-LinkedList ToDO *100*
 
 This is the class that actually
 contains all the user made ToDo lists

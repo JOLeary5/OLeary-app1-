@@ -5,36 +5,48 @@
 
 package baseline;
 
+import java.util.Scanner;
+
 public class Item {
 
-    // StringArray (Description)
+    String Title;
+    String Description;
+    String Date;
+    Boolean Complete = false;
 
-    // FormattedString (DueDate)
+    public String editTitle()
+    {
+        Scanner scanR = new Scanner(System.in);
+        System.out.println("Edit Title");
+        String DueDateX =  scanR.nextLine();
+        return DueDateX;
+    }
 
-    // Boolean (Complete) = False
-
-
-    // public StringArray editDescription (Item.StringArray X)
-    // {
-    //   sout ("Enter Description")
-    //   item.Description
-    //   return Description
-    // }
-
-
-    // public FormattedString (Item.DueDate X)
-    // {
-    //   sout ("Edit Due Date")
-    //   item.DueDate
-    //   return Description
-    // }
+    public String editDescription()
+    {
+        Scanner scanR = new Scanner(System.in);
+        System.out.println("Please enter an Item Description");
+        String DescriptionX = scanR.nextLine();
+        return DescriptionX;
+    }
 
 
-    // public CompleteCheck()
-    // {
-    //   **** HOPEFULLY THIS WILL BE A BUTTON UNDER THE ITEM ITSELF *****
-    //   item.DueDate
-    //   return Description
-    // }
+    public String editDate()
+    {
+        Scanner scanR = new Scanner(System.in);
+        System.out.println("Edit Due-Date");
+        String DueDateX =  scanR.nextLine();
+        return DueDateX;
+    }
+
+
+    public boolean CheckComplete()
+    {
+        return true;
+    }
+    public boolean CheckIncomplete()
+    {
+        return false;
+    }
 
 }

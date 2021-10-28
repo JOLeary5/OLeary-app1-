@@ -5,23 +5,15 @@
 
 package baseline;
 
-public class ToDoList {
-    //
-    // LinkedList ToDoList
-    //
-    //
-    // Function AddToDo(){
-    //
-    //      ToDo ToDoObject1 = new Todo   *Creates todo Lists*
-    //
-    //      ToDo.editTitle
-    //
-    //      add ToDo to LinkedList
-    //}
+import java.util.LinkedList;
 
-    // Function RemoveToDo(ToDoX){
-    //
-    //      remove ToDo from the LinkedList
-    //
-    //}
+public class ToDoList {
+
+    private ListItems ItemList;
+
+    private String
+    ToDoList()
+    {
+
+    }
 }
